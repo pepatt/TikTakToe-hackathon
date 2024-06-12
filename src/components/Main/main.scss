@@ -1,0 +1,28 @@
+.main {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  &__big-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  &__little-wrapper {
+    width: 30%;
+    height: 10rem;
+    background-color: grey;
+    padding: 1.5%;
+  }
+  &__buttons {
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgb(192, 192, 192);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8rem;
+  }
+}
