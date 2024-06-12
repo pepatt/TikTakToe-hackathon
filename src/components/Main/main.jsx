@@ -1,6 +1,7 @@
 import React from "react";
 import "./Main.scss";
 import { useState } from "react";
+import axios from "axios";
 
 function Main() {
   const [tictacArr, setTictacArr] = useState([
@@ -16,13 +17,24 @@ function Main() {
   ]);
   const [playerTurn, setPlayerTurn] = useState(true);
 
-  function clickHandler(e) {
+  async function clickHandler(e) {
     e.preventDefault();
     console.log(e.target.id);
     tictacArr[e.target.id] = playerTurn;
     setPlayerTurn(!playerTurn);
     const temp = [...tictacArr];
     setTictacArr(temp);
+
+    const response = await axios.post("http://localhost:8080/game", {
+      board: tictacArr,
+    });
+    console.log(response.data.status);
+    console.log(response.data.winner);
+    if (response.data.winner === true) {
+      alert("X won");
+    } else if (response.data.winner === false) {
+      alert("O won");
+    }
   }
 
   function renderGrid() {
@@ -36,7 +48,11 @@ function Main() {
               {tictacArr[i] === true ? "X" : "O"}
             </div>
           ) : (
-            <div className="main__buttons" id={`${i}`}></div>
+            <div
+              className="main__buttons"
+              onClick={clickHandler}
+              id={`${i}`}
+            ></div>
           )}
         </div>
       );
@@ -47,9 +63,7 @@ function Main() {
   return (
     <>
       <div className="main">
-        <form className="main__big-wrapper" onClick={clickHandler}>
-          {renderGrid()}
-        </form>
+        <form className="main__big-wrapper">{renderGrid()}</form>
       </div>
     </>
   );

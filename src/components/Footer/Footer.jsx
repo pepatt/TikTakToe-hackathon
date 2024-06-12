@@ -5,7 +5,7 @@ import TicTac from "../../../public/tic-tac-toe.jpeg";
 function Footer() {
   return (
     <div className="footer">
-      <img className="footer__img" src={TicTac}></img>
+      <img className="footer__img footer__blink-me" src={TicTac}></img>
       <div className="footer__items">
         <div className="footer__left">
           <p className="footer__x">X</p>
@@ -15,7 +15,7 @@ function Footer() {
           <p className="footer__o">O</p>
         </div>
       </div>
-      <img className="footer__img" src={TicTac}></img>
+      <img className="footer__img footer__blink-me" src={TicTac}></img>
     </div>
   );
 }
