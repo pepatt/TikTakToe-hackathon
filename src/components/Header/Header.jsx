@@ -7,11 +7,11 @@ function Header() {
     <div className="header">
       <div className="header__nav">
         <div className="header__player1">
-          <p>Player 1:</p>
+          <p>Player 1</p>
         </div>
         <img className="header__img" src={TicTac}></img>
         <div className="header__player2">
-          <p>Player 2:</p>
+          <p>Player 2</p>
         </div>
       </div>
     </div>
