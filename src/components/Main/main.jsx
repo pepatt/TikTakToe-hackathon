@@ -2,6 +2,14 @@ import React from "react";
 import { useState } from "react";
 
 function main() {
+  const [gameScores, setGameScores] = useState([]);
+
+  useEffect(() => {
+    const getGameData = async () => {
+      const response = await axios.get();
+    };
+  });
+
   function handleClick(id) {
     console.log("I have been clicked");
   }

@@ -1,11 +1,42 @@
 .header {
+  //   background-color: red;
   display: flex;
   width: 100%;
+  border: 1rem;
+  border-color: grey;
+  border-style: solid;
+  border-width: 0 0 0.2rem 0;
+
+  &__img {
+    width: 15%;
+  }
 
   &__nav {
     display: flex;
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  &__player1 {
+    font-family: monospace;
+    font-weight: 500;
+    font-size: 2rem;
+    width: 40%;
+    border: 1rem;
+    border-color: grey;
+    border-style: solid;
+    border-width: 0 0.5rem 0.5rem 0;
+  }
+
+  &__player2 {
+    font-family: monospace;
+    font-weight: 500;
+    font-size: 2rem;
+    width: 40%;
+    border: 1rem;
+    border-color: grey;
+    border-style: solid;
+    border-width: 0 0 0.5rem 0.5rem;
   }
 }

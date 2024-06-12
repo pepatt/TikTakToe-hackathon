@@ -1,0 +1,55 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+
+  &__img {
+    width: 30%;
+  }
+
+  &__items {
+    background-image: url(./TikTakToe-hackathon/public/tic-tac-toe.jpeg);
+    background-size: cover;
+    // background-color: red;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: vh;
+    justify-content: center;
+  }
+
+  //   &__left {
+  //     width: 20%;
+  //     height: 4vh;
+  //   }
+
+  &__x {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+    font-size: 3rem;
+    font-weight: 700;
+    border: 1rem;
+    border-color: grey;
+    border-style: solid;
+    border-width: 0.5rem 0.5rem 0.5rem 0.5rem;
+    width: 20vw;
+    height: 25vh;
+    align-items: center;
+  }
+
+  &__o {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+    font-size: 3rem;
+    font-weight: 700;
+    border: 1rem;
+    border-color: grey;
+    border-style: solid;
+    border-width: 0.5rem 0.5rem 0.5rem 0.5rem;
+    width: 20vw;
+    height: 25vh;
+  }
+}
