@@ -10,6 +10,16 @@
   &__img {
     width: 15%;
   }
+  &__img-1 {
+    padding-top: 2rem;
+    padding-left: 1rem;
+    height: 3rem;
+  }
+  &__img-2 {
+    padding-top: 2rem;
+    padding-left: 1rem;
+    height: 3rem;
+  }
 
   &__nav {
     display: flex;
@@ -19,6 +29,8 @@
   }
 
   &__player1 {
+    display: flex;
+    justify-content: flex-start;
     font-family: monospace;
     font-weight: 500;
     font-size: 2rem;
@@ -27,9 +39,12 @@
     border-color: grey;
     border-style: solid;
     border-width: 0 0.5rem 0.5rem 0;
+    border-radius: 10px;
   }
 
   &__player2 {
+    display: flex;
+    justify-content: flex-start;
     font-family: monospace;
     font-weight: 500;
     font-size: 2rem;
@@ -38,15 +53,7 @@
     border-color: grey;
     border-style: solid;
     border-width: 0 0 0.5rem 0.5rem;
+    border-radius: 10px;
   }
 
-  &__blink-me {
-    animation: blinker 1s linear infinite;
-  }
-
-  @keyframes blinker {
-    50% {
-      opacity: 0;
-    }
-  }
 }

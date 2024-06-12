@@ -3,7 +3,7 @@ import "./main.scss";
 import { useState } from "react";
 import axios from "axios";
 
-function Main() {
+function Main({ playerTurn, setPlayerTurn }) {
   const [tictacArr, setTictacArr] = useState([
     " ",
     " ",
@@ -15,8 +15,6 @@ function Main() {
     " ",
     " ",
   ]);
-  const [playerTurn, setPlayerTurn] = useState(true);
-
   async function clickHandler(e) {
     e.preventDefault();
     console.log(e.target.id);

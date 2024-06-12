@@ -40,6 +40,8 @@
     width: 20vw;
     height: 25vh;
     align-items: center;
+    border-radius: 10px;
+
   }
 
   &__o {
@@ -55,15 +57,7 @@
     border-width: 0.5rem 0.5rem 0.5rem 0.5rem;
     width: 20vw;
     height: 25vh;
-  }
+    border-radius: 10px;
 
-  &__blink-me {
-    animation: blinker 1s linear infinite;
-  }
-
-  @keyframes blinker {
-    50% {
-      opacity: 0;
-    }
   }
 }
