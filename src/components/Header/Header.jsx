@@ -27,12 +27,12 @@ function Header({ playerTurn }) {
     <div className="header">
       <div className="header__nav">
         <div className="header__player1">
-          <p>Player 1</p>
+          <p>Player X</p>
           {turnDisplayTrue()}
         </div>
         {/* <img className="header__img header__blink-me" src={TicTac}></img> */}
         <div className="header__player2">
-          <p>Player 2</p>
+          <p>Player O</p>
           {turnDisplayFalse()}
         </div>
       </div>
